@@ -39,13 +39,12 @@ function equalPositions(pos1, pos2) {
   return pos1.x === pos2.x && pos1.y === pos2.y;
 }
 let score = document.querySelector("#score");
-let scc = 0;
+export let scc = 0;
 function addSegments() {
   for (let i = 0; i < newSegments; i++) {
     snakeBody.push({ ...snakeBody[snakeBody.length - 1] });
-    score.innerText = "";
     scc++;
-    score.innerText += scc;
+    score.innerText = "score:" + scc;
   }
   newSegments = 0;
 }
