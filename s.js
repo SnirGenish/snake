@@ -14,6 +14,7 @@ let gameOver = false;
 const end = document.querySelector(".end");
 const endtext = document.querySelector("#endscore");
 const endBtn = document.querySelector("#endbtn");
+const h1 = document.querySelector("h1");
 endBtn.addEventListener("click", () => {
   location.reload();
 });
@@ -22,6 +23,7 @@ function main(currentTime) {
   if (gameOver) {
     endtext.innerText = "score: " + scc;
     end.style.display = "flex";
+    h1.style.animation = "asdf 7s";
   }
   window.requestAnimationFrame(main);
   const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000;
