@@ -39,6 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   display: none;
+  color: aliceblue;
 }
 #endbtn:hover {
   background-color: rgb(33, 25, 25);
